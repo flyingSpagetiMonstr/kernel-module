@@ -1,0 +1,16 @@
+make clean
+make
+sudo insmod dev_driver.ko
+lsmod
+sudo dmesg | tail
+
+# mknod {route} { b | c } Major 0
+# mknod DEVICE c MAJOR_SERIAL 0
+sudo mknod /dev/dev_driver c 123 0
+
+
+
+gcc test.c -o test
+./test
+
+sudo rmmod dev_driver
