@@ -3,7 +3,8 @@
 This is a project for my OS course at 2nd year.
 
 Function: 
-- load A simple kernel module(device driver) on linux.
+- load a simple kernel module(device driver) on linux.
+
 The driver:
 - open device
 - read/write device
